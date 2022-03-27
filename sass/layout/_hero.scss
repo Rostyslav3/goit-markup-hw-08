@@ -1,0 +1,57 @@
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background: #2f303a;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Header-tell.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  @include tab {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/Header-tab.jpg);
+  }
+  @include desk {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/img_16.jpg);
+  }
+}
+
+.hero__container {
+  width: 100%;
+  padding: 0;
+  @include tel {
+    width: 380px;
+  }
+  @include desk {
+    width: 696px;
+  }
+}
+.hero__title {
+  width: 100%;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include desk {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

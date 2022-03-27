@@ -1,0 +1,61 @@
+.advantages.section {
+  @include desk {
+    padding-bottom: 0px;
+  }
+}
+
+.advantages__item {
+  @include tab {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @include desk {
+    width: calc(1170px / 4 - 30px);
+    justify-content: center;
+  }
+}
+.advantages__list {
+  @include tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+.advantages__list :not(:last-child) {
+   @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+
+.advantages__slogan {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+
+  @include tab {
+    text-align: left;
+  }
+}
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.advantages__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 120px;
+  background-color: var(--icon-background-color);
+  border-radius: 4px;
+  margin-bottom: var(--card-gap);
+}
