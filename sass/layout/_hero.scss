@@ -16,7 +16,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/Header-tel-2x.jpg);
+      url(../images/Header-tel-2x.jpg);
   }
 
   @include tab {
@@ -30,7 +30,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/Header-tab-2x.jpg);
+        url(../images/Header-tab-2x.jpg);
     }
   }
   @include desk {
@@ -46,7 +46,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(/images/Header-desk-2x.jpg);
+        url(../images/Header-desk-2x.jpg);
     }
   }
 }
