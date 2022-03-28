@@ -16,9 +16,13 @@
   }
 }
 .footer__link {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: baseline;
   }
   @include desk {
     display: flex;
@@ -26,7 +30,7 @@
   }
 }
 .footer__address {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
 }
@@ -69,14 +73,8 @@
   margin-bottom: 20px;
 }
 .footer__social {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
-
   // margin-left: 70px;
-  @include tab {
-    margin-left: 165px;
-  }
+
   @include desk {
     margin-left: 70px;
   }

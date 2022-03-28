@@ -11,6 +11,13 @@
   background-position: center;
   background-size: cover;
   text-align: center;
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Header-tel-2x.jpg);
+  }
 
   @include tab {
     background-image: linear-gradient(
@@ -18,6 +25,13 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/Header-tab.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/Header-tab-2x.jpg);
+    }
   }
   @include desk {
     padding-top: 200px;
@@ -27,6 +41,13 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/img_16.jpg);
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/Header-desk-2x.jpg);
+    }
   }
 }
 
