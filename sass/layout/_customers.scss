@@ -6,27 +6,67 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+// .customers__list {
+//   display: flex;
+
+//   @media screen and (max-width: 1199px) {
+//     flex-wrap: wrap;
+//     margin-left: -30px;
+//     margin-bottom: -30px;
+//   }
+//   @include desk {
+//     justify-content: center;
+//   }
+//   // display: flex;
+//   // justify-content: center;
+// }
+// .customers__item {
+//   &:nth-last-child(n + 3) {
+//     @media screen and (max-width: 767px) {
+//       margin-bottom: 30px;
+//     }
+//   }
+// }
+// .customers__item {
+//   width: 100%;
+//   height: 92px;
+//   box-sizing: border-box;
+//   @media screen and (max-width: 767px) {
+//     width: calc(100% / 2 - 30px);
+//     margin-left: 30px;
+//     margin-bottom: 30px;
+//   }
+//   @media screen and (min-width: 768px) and (max-width: 1199px) {
+//     width: calc(100% / 3 - 30px);
+//     margin-left: 30px;
+//     margin-bottom: 30px;
+//   }
+//   @include desk {
+//     width: 170px;
+//     justify-content: center;
+//   }
+// }
+
+// .customers__item + .customers__item {
+//   @include desk {
+//     margin-left: var(--card-gap);
+//   }
+// }
 .customers__list {
   display: flex;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
-  }
-  @include desk {
-    justify-content: center;
-  }
-  // display: flex;
-  // justify-content: center;
-}
-.customers__item {
-  &:nth-last-child(n + 3) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
+    margin-top: -30px;
   }
 }
+// .customers :not(:last-child) {
+//   @media screen and (max-width: 767px) {
+//     margin-bottom: 30px;
+//   }
+// }
 .customers__item {
   width: 100%;
   height: 92px;
@@ -34,22 +74,20 @@
   @media screen and (max-width: 767px) {
     width: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
   }
   @include desk {
     width: 170px;
-    justify-content: center;
   }
 }
-
-.customers__item + .customers__item {
+.customers__item:not(:last-child) {
   @include desk {
-    margin-left: var(--card-gap);
+    margin-right: 30px;
   }
 }
 
